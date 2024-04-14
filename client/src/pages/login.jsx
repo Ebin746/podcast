@@ -7,7 +7,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 50vh;
-  background-color: whitesmoke;
+  background-color:transparent;
 
   @media (max-width: 768px) {
     padding: 5px;
@@ -20,7 +20,7 @@ const Card = styled.div`
   flex-direction: column;
   padding: 30px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 200px;
   position: relative;
@@ -77,6 +77,7 @@ const ErrorMessage = styled.p`
 `;
 
 const CloseButton = styled.button`
+color: black;
   position: absolute;
   top: 10px;
   right: 20px;
@@ -84,7 +85,9 @@ const CloseButton = styled.button`
   border: none;
   background-color: transparent;
   cursor: pointer;
-  
+  @media (max-width:420) {
+    right: 25px;
+  }
   &::before,
   &::after {
     content: '';
